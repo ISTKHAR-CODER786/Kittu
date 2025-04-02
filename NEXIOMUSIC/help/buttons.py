@@ -21,7 +21,6 @@ class BUTTONS(object):
             InlineKeyboardButton("𝐈꯭꯭ѕ꯭꯭፝֠֩‌тк꯭꯭н፝֠֩‌α꯭꯭я꯭꯭", url="https://t.me/THUNDERDEVS"),
         ],
         [
-            InlineKeyboardButton("ʜυɢ", url=https://t.me/THUNDERDEVS.),
             InlineKeyboardButton("ᴛєᴄʜ", url="https://t.me/THUNDERDEVS"),
         ],
         [

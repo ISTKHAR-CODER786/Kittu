@@ -1,4 +1,4 @@
-# MODE BY - SACHIN SANATANI
+# MODE BY - ISTKHAR 
 
 class Helper(object):
     HELP_MAIN = '''
@@ -10,15 +10,15 @@ class Helper(object):
     HELP_SUPPORT = '''
 **❖ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴ ᴛᴏ ɢᴇᴛ ᴍᴏʀᴇ ᴀʙᴏᴜᴛ ᴍᴇ
 
-❍ ɪғ ʏᴏᴜ ғɪɴᴅ ᴀɴʏ ᴇʀʀᴏʀ ᴏʀ ʙᴜɢ ᴏɴ ʙᴏᴛ ᴏʀ ᴡᴀɴᴛ ᴛᴏ ɢɪᴠᴇ ᴀɴʏ ғᴇᴇᴅʙᴀᴄᴋ ᴀʙᴏᴜᴛ ᴛʜᴇ ʙᴏᴛ ᴛʜᴇɴ ʏᴏᴜ ᴀʀᴇ ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ [sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ](https://t.me/sanatani_support)**
+❍ ɪғ ʏᴏᴜ ғɪɴᴅ ᴀɴʏ ᴇʀʀᴏʀ ᴏʀ ʙᴜɢ ᴏɴ ʙᴏᴛ ᴏʀ ᴡᴀɴᴛ ᴛᴏ ɢɪᴠᴇ ᴀɴʏ ғᴇᴇᴅʙᴀᴄᴋ ᴀʙᴏᴜᴛ ᴛʜᴇ ʙᴏᴛ ᴛʜᴇɴ ʏᴏᴜ ᴀʀᴇ ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ [sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ](https://t.me/THUNDERDEVS)**
 '''
 
     HELP_ABOUT = '''
-**❖ ๏ ʟᴇᴛ's ɪɴᴛʀᴏᴅᴜᴄᴇ [sᴀɴᴀᴛᴀɴɪ-ᴍᴜsɪᴄ](https://t.me/All_sanatani_bot) ʙᴏᴛ
+**❖ ๏ ʟᴇᴛ's ɪɴᴛʀᴏᴅᴜᴄᴇ [ɪsᴛᴋʜᴀʀ-ᴍᴜsɪᴄ](https://t.me/ll_MY_BOTS) ʙᴏᴛ
 
-➻ [sᴀɴᴀᴛᴀɴɪ-ᴍᴜsɪᴄ](https://t.me/All_sanatani_bot)  ɪs ᴏɴᴇ ᴏғ ᴛʜᴇ ʙᴇsᴛ ᴍᴜsɪᴄ | ᴠɪᴅᴇᴏ sᴛꝛᴇᴀᴍɪɴɢ ʙᴏᴛ ᴏɴ ᴛᴇʟᴇɢꝛᴧᴍ ғᴏꝛ ʏᴏᴜꝛ ɢꝛᴏᴜᴘs ᴀɴᴅ ᴄʜᴧɴɴᴇʟ
+➻ [ɪsᴛᴋʜᴀʀ-ᴍᴜsɪᴄ](https://t.me/ll_MY_BOTS)  ɪs ᴏɴᴇ ᴏғ ᴛʜᴇ ʙᴇsᴛ ᴍᴜsɪᴄ | ᴠɪᴅᴇᴏ sᴛꝛᴇᴀᴍɪɴɢ ʙᴏᴛ ᴏɴ ᴛᴇʟᴇɢꝛᴧᴍ ғᴏꝛ ʏᴏᴜꝛ ɢꝛᴏᴜᴘs ᴀɴᴅ ᴄʜᴧɴɴᴇʟ
 
-๏ ᴡʜʏ [˹ sᴀɴᴀᴛᴀɴɪ ᴍᴜsɪᴄ ˼](https://t.me/All_sanatani_bot) ɪs ʙᴇsᴛ ?
+๏ ᴡʜʏ [˹ ɪsᴛᴋʜᴀʀ ᴍᴜsɪᴄ ˼](https://t.me/ll_MY_BOTS) ɪs ʙᴇsᴛ ?
 
 ➻ ʙᴇsᴛ sᴏᴜɴᴅ ǫᴜᴀʟɪᴛʏ
 ➻ ᴍᴜsɪᴄ ʙᴏᴛ ғᴇᴀᴛᴜʀᴇs
@@ -32,12 +32,12 @@ class Helper(object):
 
 ᴀʟʟ ᴛʜᴇ ғᴇᴀᴛᴜʀᴇs ᴀʀᴇ ᴡᴏʀᴋɪɴɢ ғɪɴᴇ
 
-❖ JOIN [CHANNEL](https://t.me/All_sanatani_bot) |×| [GROUP](https://t.me/sanatani_support)**
+❖ JOIN [CHANNEL](https://t.me/ll_MY_BOTS) |×| [GROUP](https://t.me/THUNDERDEVS)**
 '''
 
 
     HELP_GUIDE = '''
-**❖ ʜᴇʏ ᴅᴇᴀʀ ᴛʜɪs ɪs ᴀ ǫᴜɪᴄᴋ ᴀɴᴅ sɪᴍᴘʟᴇ ɢᴜɪᴅᴇ ᴛᴏ ᴜsɪɴɢ [sᴀɴᴀᴛᴀɴɪ-ᴍᴜsɪᴄ](https://t.me/All_sanatani_bot)
+**❖ ʜᴇʏ ᴅᴇᴀʀ ᴛʜɪs ɪs ᴀ ǫᴜɪᴄᴋ ᴀɴᴅ sɪᴍᴘʟᴇ ɢᴜɪᴅᴇ ᴛᴏ ᴜsɪɴɢ [ɪsᴛᴋʜᴀʀ-ᴍᴜsɪᴄ](https://t.me/ll_MY_BOTS)
 
 1) ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ 'ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ' ʙᴜᴛᴛᴏɴ
 2) sᴇʟᴇᴄᴛ ʏᴏᴜʀ ɢʀᴏᴜᴘ ɴᴀᴍᴇ
@@ -52,10 +52,11 @@ class Helper(object):
 **❖ ʜᴇʏ, ɪ ᴀᴍ ɢʟᴀᴅ ᴛᴏ ᴋɴᴏᴡ ʏᴏᴜ ᴀʀᴇ ɪɴᴛᴇʀᴇsᴛᴇᴅ ɪɴ ᴅᴏɴᴀᴛɪɴɢ ᴜs ᴛʜᴀᴛ ᴍᴇᴀɴ ᴀ ʟᴏᴛ :)
 
 ᴡᴇ ᴘʀᴏᴠɪᴅᴇ 24×7 ᴍᴜsɪᴄ sᴇʀᴠɪᴄᴇ sᴏ ᴡᴇ ᴀʟsᴏ ɴᴇᴇᴅ sᴏᴍᴇ ʜᴇʟᴘ ғᴏʀ ɪᴛ, ᴅᴏɴᴀᴛᴇ ɴᴏᴡ ᴠɪᴀ :-
-• ᴜᴘɪ ɪᴅ » **`sachinsanatani@ybl`
-**• ǫʀ ᴄᴏᴅᴇ » [ᴛᴀᴘ ᴛᴏ sᴇᴇ ǫʀ ᴄᴏᴅᴇ](https://files.catbox.moe/vbnp3q.jpg) **
-**• ʏᴏᴜ ᴄᴀɴ ᴀʟsᴏ ᴅᴏɴᴀᴛᴇ ʙʏ ᴄᴏɴᴛᴀᴄᴛɪɴɢ [ᴅᴇᴠᴇʟᴏᴘᴇʀ](https://t.me/v_vip_owner) 🚩
+• ᴜᴘɪ ɪᴅ » **`istkharalam-786@ybl`
+**• ǫʀ ᴄᴏᴅᴇ » [ᴛᴀᴘ ᴛᴏ sᴇᴇ ǫʀ ᴄᴏᴅᴇ](https://files.catbox.moe/nm9509.jpg) **
+**• ʏᴏᴜ ᴄᴀɴ ᴀʟsᴏ ᴅᴏɴᴀᴛᴇ ʙʏ ᴄᴏɴᴛᴀᴄᴛɪɴɢ [ᴅᴇᴠᴇʟᴏᴘᴇʀ](https://t.me/ll_ISTKHAR_BABY_lll) 🚩
 
-ʏᴏᴜʀ sᴍᴀʟʟ ᴀᴍᴏᴜɴᴛ ᴄᴀɴ ʜᴇʟᴘ ᴜs ᴀɴᴅ sᴀɴᴀᴛᴀɴɪ ᴛᴏ ɢʀᴏᴡ ᴍᴏʀᴇ**
+ʏᴏᴜʀ sᴍᴀʟʟ ᴀᴍᴏᴜɴᴛ ᴄᴀɴ ʜᴇʟᴘ ᴜs ᴀɴᴅ ɪsᴛᴋʜᴀʀ ᴛᴏ ɢʀᴏᴡ ᴍᴏʀᴇ**
 '''
         
+

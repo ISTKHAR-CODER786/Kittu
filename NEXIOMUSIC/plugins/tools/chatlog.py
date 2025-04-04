@@ -10,7 +10,7 @@ import asyncio, os, aiohttp
 from pathlib import Path
 from pyrogram.enums import ParseMode
 
-NEXIOPIC = [
+photo = [
     "https://graph.org/file/e509753cf069de86e52f8.jpg",
     "https://graph.org/file/babb71b593f36549218ce.jpg",
     "https://graph.org/file/4a254d425fb4bf09b7470.jpg",
@@ -32,46 +32,31 @@ NEXIOPIC = [
 @app.on_message(filters.new_chat_members, group=2)
 async def join_watcher(_, message):    
     chat = message.chat
-
-    # Check if bot is admin
-    member = await app.get_chat_member(chat.id, app.me.id)
-    if member.status not in ["administrator", "creator"]:
-        await message.reply_text("Mujhe **admin** banana padega tabhi mai group ka invite link le sakta hoon!")
-        return
-
-    # Check if bot has invite permission
-    if not member.can_invite_users:
-        await message.reply_text("Mujhe **'Invite via Link'** permission enable karni padegi!")
-        return
-
-    # Generate invite link
-    try:
-        link = await app.export_chat_invite_link(chat.id)
-    except RPCError:
-        link = "Invite link generate nahi ho paya!"
-
+    link = await app.export_chat_invite_link(chat.id)
     for member in message.new_chat_members:
         if member.id == app.id:
             count = await app.get_chat_members_count(chat.id)
             msg = (
-                f"<b>❖ ʙᴏᴛ ᴀᴅᴅᴇᴅ ɪɴ ᴀ #ɴᴇᴡ_ɢʀᴏᴜᴘ ❖</b>\n\n"
-                f"<b>❍ ɢʀᴏᴜᴘ ɴᴀᴍᴇ ➠</b> {message.chat.title}\n"
-                f"<b>❍ ɢʀᴏᴜᴘ ɪᴅ ➠</b> {message.chat.id}\n"
-                f"<b>❍ ɢʀᴏᴜᴘ ᴜsᴇʀɴᴀᴍᴇ ➠</b> @{message.chat.username}\n"
-                f"<b>❍ ɢʀᴏᴜᴘ ʟɪɴᴋ ➠</b> {link}\n"
-                f"<b>❍ ɢʀᴏᴜᴘ ᴍᴇᴍʙᴇʀs ➠</b> {count}\n\n"
-                f"<b>❖ ᴀᴅᴅᴇᴅ ʙʏ ➠</b> {message.from_user.mention}"
+                f"📝 ᴍᴜsɪᴄ ʙᴏᴛ ᴀᴅᴅᴇᴅ ɪɴ ᴀ ɴᴇᴡ ɢʀᴏᴜᴘ\n\n"
+                f"____________________________________\n\n"
+                f"📌 ᴄʜᴀᴛ ɴᴀᴍᴇ: {chat.title}\n"
+                f"🍂 ᴄʜᴀᴛ ɪᴅ: {chat.id}\n"
+                f"🔐 ᴄʜᴀᴛ ᴜsᴇʀɴᴀᴍᴇ: @{chat.username}\n"
+                f"🛰 ᴄʜᴀᴛ ʟɪɴᴋ: [ᴄʟɪᴄᴋ]({link})\n"
+                f"📈 ɢʀᴏᴜᴘ ᴍᴇᴍʙᴇʀs: {count}\n"
+                f"🤔 ᴀᴅᴅᴇᴅ ʙʏ: {message.from_user.mention}"
             )
-            await app.send_photo(LOG_GROUP_ID, photo=random.choice(NEXIOPIC), caption=msg, reply_markup=InlineKeyboardMarkup([
-                [InlineKeyboardButton(f"sᴇᴇ ʙᴏᴛ ᴀᴅᴅᴇᴅ ɢʀᴏᴜᴘ", url=f"{link}") if "http" in link else InlineKeyboardButton("No Invite Link", callback_data="no_link")]
+            await app.send_photo(LOG_GROUP_ID, photo=random.choice(photo), caption=msg, reply_markup=InlineKeyboardMarkup([
+                [InlineKeyboardButton(f"sᴇᴇ ɢʀᴏᴜᴘ👀", url=f"{link}")]
             ]))
 
 @app.on_message(filters.left_chat_member)
 async def on_left_chat_member(_, message: Message):
     if (await app.get_me()).id == message.left_chat_member.id:
-        remove_by = message.from_user.mention if message.from_user else "ᴜɴᴋɴᴏᴡɴ ᴜsᴇʀ"
+        remove_by = message.from_user.mention if message.from_user else "𝐔ɴᴋɴᴏᴡɴ 𝐔sᴇʀ"
         title = message.chat.title
-        username = f"@{message.chat.username}" if message.chat.username else "ᴘʀɪᴠᴀᴛᴇ ᴄʜᴀᴛ"
+        username = f"@{message.chat.username}" if message.chat.username else "𝐏ʀɪᴠᴀᴛᴇ 𝐂ʜᴀᴛ"
         chat_id = message.chat.id
-        left = f"<b>❖ #ʟᴇғᴛ_ɢʀᴏᴜᴘ ᴀ ɢʀᴏᴜᴘ ❖</b>\n\n<b>❍ ɢʀᴏᴜᴘ ɴᴀᴍᴇ ➠</b> {title}\n\n<b>❍ ɢʀᴏᴜᴘ ɪᴅ ➠</b> {chat_id}\n\n<b>❍ ʙᴏᴛ ʀᴇᴍᴏᴠᴇᴅ ʙʏ ➠</b> {remove_by}\n\n<b>❖ ʙᴏᴛ ɴᴀᴍᴇ ➠</b> {app.name}"
-        await app.send_photo(LOG_GROUP_ID, photo=random.choice(NEXIOPIC), caption=left)
+        left = f"✫ <b><u>#𝐋ᴇғᴛ_𝐆ʀᴏᴜᴘ</u></b> ✫\n\n𝐂ʜᴀᴛ 𝐓ɪᴛʟᴇ : {title}\n\n𝐂ʜᴀᴛ 𝐈ᴅ : {chat_id}\n\n𝐑ᴇᴍᴏᴠᴇᴅ 𝐁ʏ : {remove_by}\n\n𝐁ᴏᴛ : @{app.username}"
+        await app.send_photo(LOG_GROUP_ID, photo=random.choice(photo), caption=left)
+        

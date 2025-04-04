@@ -109,13 +109,13 @@ async def get_thumb(videoid):
         background.paste(image3, (0, 0), mask=image3)
 
         draw = ImageDraw.Draw(background)
-        font = ImageFont.truetype("NEXIOMUSIC/assets/font2.ttf", 45)
-        font2 = ImageFont.truetype("NEXIOMUSIC/assets/font2.ttf", 70)
-        arial = ImageFont.truetype("NEXIOMUSIC/assets/font2.ttf", 30)
-        name_font = ImageFont.truetype("NEXIOMUSIC/assets/font.ttf", 30)
+        font = ImageFont.truetype("AloneX/assets/font2.ttf", 45)
+        font2 = ImageFont.truetype("AloneX/assets/font2.ttf", 70)
+        arial = ImageFont.truetype("AloneX/assets/font2.ttf", 30)
+        name_font = ImageFont.truetype("AloneX/assets/font.ttf", 30)
         para = textwrap.wrap(title, width=30)
         j = 0
-        draw.text((5, 5), f"ISTKHAR MUSIC", fill="white", font=name_font)
+        draw.text((5, 5), f"IstkharXMusic", fill="Blue", font=name_font)
         for line in para:
             if j == 1:
                 j += 1
